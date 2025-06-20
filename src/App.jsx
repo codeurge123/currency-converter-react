@@ -10,7 +10,7 @@ function App() {
     const [from,setFrom] = useState("usd")
     const [to,setTo] = useState("inr");
 
-    const [convertedAmount,setConvertedAmount] = useState();
+    const [convertedAmount,setConvertedAmount] = useState(0);
 
     const currencyInfo = useCurrencyInfo(from);
     // As we know useCurrencyInfo wala hook se hamra data jo hai vo object ke form mein aa rah hai and hum ko us mein se bhe bass "key" se he matlab hai bass. So, let see how to take "keys" from "Object".
