@@ -52,13 +52,13 @@ function App() {
                                 currencyOptions={options}
                                 onCurrencyChange={(currency) => setFrom(currency)}
                                 selectCurrency={from}
-                                place="Amount"
+                                // place="Amount"
                             />
                         </div>
                         <div className="relative w-full h-0.5">
                             <button
                                 type="button"
-                                className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5 hover:scale-x-105 transition-all"
+                                className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-1 hover:bg-blue-700 transition-all active:scale-95 duration-75"
                                 onClick={swap}
                             >
                                 swap
@@ -72,10 +72,10 @@ function App() {
                                 onCurrencyChange={(currency) => setTo(currency)}
                                 selectCurrency={to}
                                 amountDisable // --> by default agar kuch nhi likh te ho to eska matlab true he hota hai.
-                                place="Calculated Amount"
+                                // place="Calculated Amount"
                             />
                         </div>
-                        <button type="submit" className="w-full bg-blue-700 text-white px-4 py-3 rounded-lg hover:bg-blue-600 transition-all duration-500">
+                        <button type="submit" className="w-full bg-blue-700 text-white px-4 py-3 rounded-lg hover:bg-blue-600 transition-all duration-200">
                             Convert {from.toUpperCase()} to {to.toUpperCase()}
                         </button>
                     </form>
